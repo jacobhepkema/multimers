@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'multimers-seq-io=multimers.seq_io:main',
+            'multimers=multimers.seq_io:main',
         ],
     },
 )

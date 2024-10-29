@@ -9,7 +9,12 @@ def parse_arguments():
     parser.add_argument("-p", "--plasmid_len", type=int, help="Plasmid length (optional).")
     return parser.parse_args()
 
-def main(fastq_path, output, plasmid_len=None):
+def main():
+    args = parse_arguments()
+    fastq_path = args.fastq_path
+    output = args.output
+    plasmid_len = args.plasmid_len
+
     all_lens = []
     for record in SeqIO.parse(fastq_path, 'fastq'):
         read_len = len(record.seq)
@@ -26,5 +31,5 @@ def main(fastq_path, output, plasmid_len=None):
     plt.show()
 
 if __name__ == '__main__':
-    args = parse_arguments()
-    main(args.fastq_path, args.output, args.plasmid_len)
+    main()
+
