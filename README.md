@@ -1,2 +1,2 @@
-# nanopore_multimers
+# multimers
 plot multimers from nanopore whole plasmid sequencing data
