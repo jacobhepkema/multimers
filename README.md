@@ -1,5 +1,5 @@
 # multimers
-plot multimers from nanopore whole plasmid sequencing data
+plot multimers from nanopore whole plasmid sequencing data.
 
 ## install
 ```
@@ -8,7 +8,11 @@ cd multimers
 pip install -e .
 ```
 
+Packages required: `biopython`, `matplotlib`.
+
 ## run
+Assumes input is `FASTQ`. Output e.g. `read_lengths.png`.
+
 ```
 usage: multimers [-h] [-o OUTPUT] [-p PLASMID_LEN] fastq_path
 
