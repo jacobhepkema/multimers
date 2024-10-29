@@ -28,7 +28,6 @@ def main():
     plt.ylabel("Frequency")
     plt.title("Distribution of Read Lengths" if not plasmid_len else "Distribution of Read Multiplicities")
     plt.savefig(output)
-    plt.show()
 
 if __name__ == '__main__':
     main()
