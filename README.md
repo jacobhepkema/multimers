@@ -28,3 +28,7 @@ optional arguments:
   -p PLASMID_LEN, --plasmid_len PLASMID_LEN
                         Plasmid length (optional).
 ```
+
+## example output
+
+![example output plot](example.png "example output")
